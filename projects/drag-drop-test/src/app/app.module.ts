@@ -1,10 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import {DragDropModule} from 'drag-drop'
 import { AppComponent } from './app.component';
-
-import { DndModule } from 'ngx-drag-drop';
 
 @NgModule({
   declarations: [
@@ -12,8 +9,7 @@ import { DndModule } from 'ngx-drag-drop';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    DndModule
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

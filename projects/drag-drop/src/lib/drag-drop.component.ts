@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    selector: 'ng-drag-drop',
+    templateUrl: './drag-drop.component.html',
+    styleUrls: ['./drag-drop.component.css']
 })
-export class AppComponent {
-    title = 'my-dream-app';
+export class DragDropComponent implements OnInit {
     public documentList: any = [];
     public documentTypeList: any = [];
     public documentTypeListBK: any = [];
@@ -59,4 +58,5 @@ export class AppComponent {
         this.documentTypeList[index].content = tempObj.content;
         //this.documentAssociationObj[this.employee] = JSON.parse(JSON.stringify(this.documentTypeList));
     }
+
 }
