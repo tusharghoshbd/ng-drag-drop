@@ -1,0 +1,382 @@
+select:disabled, input:disabled{
+    background-color:  rgba(0,0,0,.1) !important;
+    cursor: not-allowed !important;
+}
+.bootstrapWizard {
+    margin-top: 20px !important;
+    margin-bottom: 60px !important;
+
+}
+.bootstrapWizard li {
+    width: 16.50% !important;
+}
+
+.subheading {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    background: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    color: #222;
+    margin: 10px 0 0 !important;
+    margin-top: 25px;
+}
+
+.subheading2 {
+    display: block;
+    padding: 12px 0;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+    margin: 10px 0 0 !important;
+    margin-top: 25px;
+}
+
+.subheading3 {
+    display: block;
+    padding: 0px 0;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+    margin: 0px 0 0 !important;
+    margin-top: 25px;
+}
+
+.subheading4 {
+    display: block;
+    padding: 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+    margin: 10px 0 0 !important;
+    margin-top: 25px;
+}
+
+.greentext{
+    color: #009e0f !important;
+    font-size: 13px !important;
+}
+
+.redtext{
+    color: #cc0000 !important;
+    font-size: 13px !important;
+}
+.ashtext{
+    color: #999999 !important;
+    font-size: 13px !important;   
+}
+
+a.tablelink{
+    text-decoration: underline !important;
+}
+
+a.tablelink:hover{
+    text-decoration: none !important;
+}
+
+.bottompaddingextra{
+    padding-bottom: 110px !important;
+}
+
+.bottom-padding1{
+    padding-bottom: 25px !important;
+}
+
+.no-top-margin{
+    margin-top: 0 !important;
+    margin-bottom: -25px !important;
+}
+
+.stepsform legend {
+
+    /* border-bottom: 2px solid rgba(0,0,0,.2) !important; */
+    border-bottom: 0 !important;
+    font-size: 15px;
+    font-weight: bold !important;
+    color: #3E6360;
+
+}
+
+.stepsform label{
+    font-size: 13px !important;
+    padding-top: 4px !important;
+    text-align: left !important;
+}
+
+.customheight{
+    height: 30px;
+}
+
+.customareaform{
+    padding: 25px 3% 25px 3%;
+    border-right: 1px solid rgba(0,0,0,.2) !important;
+}
+
+.customareaform2{
+    padding: 25px 3% 25px 3%;
+}
+
+.red{
+    color: #ff0000;
+}
+
+.customtopborder {
+    border-top: 1px solid rgba(0,0,0,.2) !important;
+}
+
+.bluetext{
+    color: #0091d9 !important;
+}
+
+.clear{
+    clear: both;
+}
+
+.customareaform3{
+    padding: 0 3% 25px 3%;
+}
+
+.customareaform4{
+    padding: 25px 3% 0 3%;
+}
+
+.margin-top-10 {
+	margin-top: 10px !important;
+}
+
+
+.margin10 {
+	margin: 12px 1px 0px 0px !important;
+}
+
+.nopaddingtd td {
+	padding: 8px 5px !important;
+}
+.nopaddingtd {
+	width: 97.5%;
+	border: 1px solid #ddd;
+	margin: 5px;
+	height: 100px;
+}
+.nopaddingtd input{
+padding: 6px 6px;
+}
+
+.smart-form .select i {
+	right: 25px;
+	box-shadow: 0 0 0 8px #fff;
+}
+
+.dataarea{
+    background-color: #f0f0f0;
+    display: block;
+    padding: 20px;
+    line-height: 22px;
+}
+
+.bgcolorbox{
+    border: #d3d3d3 1px solid;
+}
+
+.nopadding {
+	padding: 0 !important;
+}
+
+.topheader{
+    display: block;
+    padding: 8px 0;
+    border: 1px solid rgba(0,0,0,.2);
+    /* border-left: 1px solid rgba(0,0,0,.2);
+    border-right: 1px solid rgba(0,0,0,.2); */
+    background-color: rgba(0,0,0,.1);
+    font-size: 16px;
+    font-weight: 300;
+    color: #232323;
+    /* margin: 10px 14px 10px 14px !important; */
+    text-align: center;
+}
+
+.documenthead{
+    display: block;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #232323;
+    margin: 10px 0 0 0 !important;
+}
+
+.smart-form .col-12 {
+	width: 100%;
+}
+
+.areaheight {
+    height: 400px !important;
+    overflow: scroll;
+    border: 1px dashed rgba(0,0,0,.3);
+    border-radius: 5px;
+    background: #fff;
+}
+
+#adddataModal .modal-dialog {
+    width: 700px !important;
+}
+
+
+.bottom-actions {
+    display: block;
+    padding: 13px 30px 15px;
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-top: 25px;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    text-align: right;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+.custompaddingmission{
+    padding: 12px 12px;
+}
+
+.topmarginmission{
+    margin-top: 15px;
+}
+
+.monthpicker{
+    padding-left: 10px !important;
+}
+.monthpicker-addon{
+    padding : 6px 10px 6px 20px !important;
+}
+
+.documentList .dd{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.documentList .dd-empty{
+    min-height: 360px !important; 
+    border: 0px solid black !important;
+}
+
+.dd-empty{
+     min-height: 37px !important; 
+    background-image: none !important;
+    background-color: none !important;
+    border: 1px solid #d1d1d1 !important;
+}
+.white{
+    background-color: white !important;
+}
+
+.green{
+   background-color: rgba(121, 177, 121, 0.50) !important;
+}
+
+.document-type {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.document-type .dd-handle {
+     margin: 0px 0 !important; 
+     background:#f2fbff !important;
+}
+.document-type .no-left-padding{
+    padding-left: 0px !important;
+}
+
+.document-type .dd-placeholder{
+    min-height: 35px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    background:#89ec71 !important;
+}
+.dd-handle:hover, .dd-handle:hover+.dd-list .dd-handle {
+    background: rgb(144, 174, 228)!important;
+    border: 1px solid #FAA937;
+    color: #333!important;
+}
+
+
+.middleheader section{
+    margin-bottom: 5px !important;
+}
+
+.right-11{
+    right : 11px !important;
+}
+.padding-top-10{
+    padding-top: 10px !important;  
+}
+.padding-top-5{
+    padding-top: 5px !important;  
+}
+.padding-top-15{
+    padding-top: 15px !important;  
+}
+.padding-left-45{
+    padding-left: 45px !important;
+}
+
+.scrolling{
+    height: 400px !important;
+    /* overflow-y: scroll; */
+    border: 1px solid #d1d1d1  !important;
+    margin-top: 5px;
+}
+/* 
+.input-file  .button{
+    opacity: 1 !important;
+}
+
+.accountcreationleft{
+	padding-right:2% !important;
+}
+
+.accountcreationright{
+    padding-left:2% !important;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.mission-order .input-group-addon{
+    height: 30px !important;
+}
+
+.notification-body>li a.msg {
+    padding-left: 0px!important;
+}
+.notification-body .from {
+    margin-right: 120px !important;
+}
+.notification-body .unread {
+     background: #ffffff !important; 
+}
+
+
+[hidden] { display: none !important;}
+.add-more-files{
+    padding-top: 5px !important;
+    padding-left: 0px !important;
+}
+
+
+#ui-monthpicker-div{
+    z-index: 30 !important;
+}
+.fiscal-month-range{
+    margin-top:10px; 
+    padding: 0px !important; 
+    color:red;
+} */
+
+.dd-item, .dd-list, .dd-empty {
+    width: 336px;
+}

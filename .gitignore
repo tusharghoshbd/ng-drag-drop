@@ -1,0 +1,26 @@
+# User specific & automatically generated files #
+#################################################
+/node_modules
+
+/npm-debug.log
+/package-lock.json
+
+/logs
+
+
+# IDE and editor specific files #
+#################################
+/nbproject
+/.phpintel
+.idea
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
