@@ -1,14 +1,8 @@
 
 
-<div class="container">
-    <br/>
+
     <div class="row">
-        <div class=" col-sm-12">
-            <div class="topheader">
-                <h3>{{"File Association"}}</h3>
-            </div>
-        </div>
-        <hr/>
+    
       <div class="col-sm-5">
         <section class="select col col-12 scrolling">
             <label class="textarea documentList">
@@ -34,9 +28,10 @@
                 </div>
             </label>
         </section>
+        
       </div>
     
-    <div class="col-sm-1 " style="text-align: center; margin-top: 170px;">
+    <div class="col-sm-1 " style="text-align: center; margin-top: 120px;">
         <i class='fas fa-arrows-alt-h' style='font-size:48px;color:gray; vertical-align: middle;'></i>
     </div>
       <div class="col-sm-6">
@@ -47,7 +42,7 @@
                     <!-- (dndDragover)="onDragover($event, draggable)" -->
 
                     <div class="form-inline" >
-                        <label [ngStyle]="{'color':draggable[draggable.type] == true ? 'green !important ' : '' }" class="col col-4 control-label  no-left-padding padding-top-10">
+                        <label style="margin-bottom: 22px;" class="col col-4 control-label  no-left-padding padding-top-10">
                                 {{draggable.type}} : 
                         </label>
                         <div class="col col-8 nopadding">
@@ -71,7 +66,8 @@
                 </div>
             </label>
         </section>
+        
       </div>
     </div>
-  </div>
+
 

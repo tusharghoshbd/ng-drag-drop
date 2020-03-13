@@ -1,3 +1,9 @@
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "assets/css/smartadmin-production-plugins.min.css";
+@import "assets/css/smartadmin-production.min.css";
+@import "assets/css/smartadmin-skins.min.css";
+
 select:disabled, input:disabled{
     background-color:  rgba(0,0,0,.1) !important;
     cursor: not-allowed !important;
@@ -185,19 +191,6 @@ padding: 6px 6px;
 	padding: 0 !important;
 }
 
-.topheader{
-    display: block;
-    padding: 8px 0;
-    border: 1px solid rgba(0,0,0,.2);
-    /* border-left: 1px solid rgba(0,0,0,.2);
-    border-right: 1px solid rgba(0,0,0,.2); */
-    background-color: rgba(0,0,0,.1);
-    font-size: 16px;
-    font-weight: 300;
-    color: #232323;
-    /* margin: 10px 14px 10px 14px !important; */
-    text-align: center;
-}
 
 .documenthead{
     display: block;
@@ -260,7 +253,7 @@ padding: 6px 6px;
     padding-bottom: 10px !important;
 }
 .documentList .dd-empty{
-    min-height: 360px !important; 
+    min-height: 260px !important; 
     border: 0px solid black !important;
 }
 
@@ -324,7 +317,7 @@ padding: 6px 6px;
 }
 
 .scrolling{
-    height: 400px !important;
+    height: 300px !important;
     /* overflow-y: scroll; */
     border: 1px solid #d1d1d1  !important;
     margin-top: 5px;
@@ -380,3 +373,12 @@ padding: 6px 6px;
 .dd-item, .dd-list, .dd-empty {
     width: 336px;
 }
+
+
+textarea {
+    width: 100%;
+    min-height: 30rem;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }

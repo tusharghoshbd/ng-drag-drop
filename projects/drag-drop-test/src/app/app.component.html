@@ -1,1 +1,31 @@
-<ng-drag-drop></ng-drag-drop>
+
+<div class="container">
+    <br/>
+    <div class="row">
+        <div class=" col-sm-12">
+            <div class="topheader">
+                <h3>{{"File Association"}}</h3>
+            </div>
+        </div>
+    </div>
+
+    <ng-drag-drop 
+        [documentList]="documentList"
+        [documentTypeList]="documentTypeList"
+        (onDraggable) ="onDraggableData($event)"
+        (onLeftDraggableDrop)="onLeftDraggableDrop($event)"
+        (onRightDraggableDrop)="onRightDraggableDrop($event)"
+    ></ng-drag-drop>
+
+    <hr/>
+<div class="row">
+    <div class="col-sm-6">
+        <textarea name="" id="myTextarea" cols="50" rows="10">{{documentList | json}}</textarea>
+            
+    </div>
+    <div class="col-sm-6">
+        <textarea name="" id="myTextarea" cols="60" rows="10">{{documentTypeList | json}}</textarea>
+    </div>
+</div>
+<br/>
+</div>
