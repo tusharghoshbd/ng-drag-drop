@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output ,EventEmitter   } from '@angular/core';
 
 @Component({
-    selector: 'ng-drag-drop',
+    selector: 'tushar-ng-drag-drop',
     templateUrl: './drag-drop.component.html',
     styleUrls: [
         './drag-drop.component.scss'
@@ -15,7 +15,6 @@ export class DragDropComponent implements OnInit {
     @Output() onDraggable: EventEmitter<any> = new EventEmitter<any>();
     @Output() onLeftDraggableDrop: EventEmitter<any> = new EventEmitter<any>();
     @Output() onRightDraggableDrop: EventEmitter<any> = new EventEmitter<any>();
-
 
     constructor() {
     }

@@ -9,13 +9,13 @@
         </div>
     </div>
 
-    <ng-drag-drop 
+    <tushar-ng-drag-drop 
         [documentList]="documentList"
         [documentTypeList]="documentTypeList"
         (onDraggable) ="onDraggableData($event)"
         (onLeftDraggableDrop)="onLeftDraggableDrop($event)"
         (onRightDraggableDrop)="onRightDraggableDrop($event)"
-    ></ng-drag-drop>
+    ></tushar-ng-drag-drop>
 
     <hr *ngIf="count!=0"/>
     <div class="row" *ngIf="count!=0">
