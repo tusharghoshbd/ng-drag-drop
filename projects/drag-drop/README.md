@@ -1,24 +1,53 @@
-# DragDrop
+# Angular Drag and Drop
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+A simple drag and drop library that help to move data from draggable to droppable.
 
-## Code scaffolding
+## Demo
+![](https://media.giphy.com/media/STT33JzC8WdvWtjNo3/giphy.gif)
+ [Demo](https://stackblitz.com/edit/tushar-ng-drag-drop?file=src%2Fapp%2Fapp.component.html).
 
-Run `ng generate component component-name --project drag-drop` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project drag-drop`.
-> Note: Don't forget to add `--project drag-drop` or else it will be added to the default project in your `angular.json` file. 
 
-## Build
+## Usage
 
-Run `ng build drag-drop` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### App Module
+```angular
+import {TusharNgDragDropModule} from 'tushar-ng-drag-drop'
 
-## Publishing
+imports: [
+  TusharNgDragDropModule
+],
+```
+#### Html file
+```angular
+<tushar-ng-drag-drop 
+   [documentList]="documentList"
+   [documentTypeList]="documentTypeList"
+   (onDraggable) ="onDraggableData($event)"
+   (onLeftDraggableDrop)="onLeftDraggableDrop($event)"
+   (onRightDraggableDrop)="onRightDraggableDrop($event)"
+></tushar-ng-drag-drop>
+```
 
-After building your library with `ng build drag-drop`, go to the dist folder `cd dist/drag-drop` and run `npm publish`.
+#### Ts file
+```angular
+public documentList: any = [];
+public documentTypeList: any = [];
+constructor(){      
+}
+onDraggableData(itemObj:any){
+  console.log(itemObj);  
+}
+onLeftDraggableDrop(leftItemArr:any){
+  console.log(leftItemArr);
+}
+onRightDraggableDrop(rightItemArr:any){
+  console.log(rightItemArr);
+}
+```
 
-## Running unit tests
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Run `ng test drag-drop` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
