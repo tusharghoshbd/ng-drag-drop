@@ -9,6 +9,9 @@ export class AppComponent implements OnInit {
   title = 'drag-drop-test';
   public documentList: any = [];
   public documentTypeList: any = [];
+  public actionName = "";
+  public count = 0;
+  public actionDetail:any;
   ngOnInit() {
         for(let i=1; i<=5; i++){
             this.documentList.push({ "id": i, "content": 'file_name_'+i+'.pdf', effectAllowed: "copyMove", disable: false, handle: false, show: true });
@@ -18,13 +21,22 @@ export class AppComponent implements OnInit {
     }
 
     onDraggableData(itemObj:any){
+        this.actionName = "onDraggableData";
+        this.count++;
+        this.actionDetail = itemObj;
         console.log(itemObj);
     }
     onLeftDraggableDrop(leftItemArr:any){
+        this.actionName = "onLeftDraggableDrop";
+        this.count++;
+        this.actionDetail = leftItemArr;
         console.log("onLeftDraggableDrop");
         console.log(leftItemArr);
     }
     onRightDraggableDrop(rightItemArr:any){
+        this.actionName = "onRightDraggableDrop";
+        this.count++;
+        this.actionDetail = rightItemArr;
         console.log("onRightDraggableDrop");
         console.log(rightItemArr);
     }
