@@ -41,11 +41,11 @@
                 <div class="dd" *ngFor="let draggable of documentTypeList">
                     <!-- (dndDragover)="onDragover($event, draggable)" -->
 
-                    <div class="form-inline" >
-                        <label style="margin-bottom: 22px;" class="col col-4 control-label  no-left-padding padding-top-10">
+                    <div class="form-inline" *ngIf="draggable.show" >
+                        <label *ngIf="draggable.type != undefined" style="margin-bottom: 22px;" class="col col-4 control-label  no-left-padding padding-top-10">
                                 {{draggable.type}} : 
                         </label>
-                        <div class="col col-8 nopadding">
+                        <div class="col col-{{draggable.type == undefined?12:8}} nopadding">
                             <ol class="dd-list dd-empty white"
                                 dndDropzone class="dd-empty dd-list dndDragover "
                                 dndEffectAllowed="copyMove"
@@ -55,7 +55,7 @@
                                     [dndDraggable]="draggable.data"
                                     (dndStart)="onDraggableStart(draggable)"
                                     (dndMoved)="onRightDraggableCopied(draggable)"
-                                    class="dd-item" *ngIf="draggable.content != ''">
+                                    class="dd-item {{draggable.class}}" *ngIf="draggable.content != ''">
                                     <div class="dd-handle">{{draggable.content}}</div>
                                 </li>
                                 <li class="dd-placeholder"

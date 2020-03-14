@@ -14,9 +14,9 @@ export class AppComponent implements OnInit {
   public actionDetail:any;
   ngOnInit() {
         for(let i=1; i<=5; i++){
-            this.documentList.push({ "id": i, "content": 'file_name_'+i+'.pdf', effectAllowed: "copyMove", disable: false, handle: false, show: true });
+            this.documentList.push({ "id": i, "content": 'file_name_'+i+'.pdf', effectAllowed: "copyMove",  show: true });
             //this.documentTypeListBK.push({ "id": "doctype_" + i, "content": "", "type": "Label "+i,  max: 1, effectAllowed: "move", disable: false, handle: false, empty: true });
-            this.documentTypeList.push({ "id":  i, "content": "", "type": "Label "+i,  max: 1, effectAllowed: "move", disable: false, handle: false, empty: true });
+            this.documentTypeList.push({ "id":  i, "content": "", "type": "Label "+i,  effectAllowed: "move" , show: true});
         }
     }
 
