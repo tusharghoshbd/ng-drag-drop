@@ -8,6 +8,7 @@ A simple drag and drop library that help to move data from draggable to droppabl
  [Demo](https://stackblitz.com/edit/tushar-ng-drag-drop?file=src%2Fapp%2Fapp.component.html).
 
 ## Installation
+As a prerequisite, you need [boostrap 3.X](https://getbootstrap.com) library.
 ```angular
 npm i ngx-drag-drop
 npm i tushar-ng-drag-drop

@@ -1,73 +1,61 @@
 
 
 
-    <div class="row">
+<div class="row">
+    <div class="col col-sm-5 ol-xs-12 documentList ">
+        <ol class="list-group scrolling "
+            dndDropzone dndEffectAllowed="copyMove"
+            (dndDrop)="onLeftDrop($event)">
+            <span *ngFor="let draggable of documentList">
+                <li [dndEffectAllowed]="draggable.effectAllowed"
+                    [dndDraggable]="draggable.data"
+                    (dndStart)="onDraggableStart(draggable)"
+                    (dndMoved)="onLeftDraggableCopied(draggable)"
+                    class="list-group-item" *ngIf="draggable.show">
+                    <div  >{{draggable.content}}</div>
+                </li>
+            </span>
+            <li class="dd-placeholder" style="height: 36px;"
+                dndPlaceholderRef>
+            </li>
+        </ol>
+    </div>
     
-      <div class="col-sm-5">
-        <section class="select col col-12 scrolling">
-            <label class="textarea documentList">
-                <div class="dd">
-                    <ol class="dd-list dd-empty white"
-                        dndDropzone dndEffectAllowed="copyMove"
-                        (dndDrop)="onLeftDrop($event)">
-                        <span *ngFor="let draggable of documentList">
+    <div class="col-sm-1 scrolling-without-border text-allign-middle hidden-xs" >
+        <i class='fa fa-arrows-h' style='font-size:48px;color:gray; vertical-align: middle;'></i>
+    </div>
+    <div class="col-sm-1r text-allign-middle visible-xs" >
+        <i class='fa fa-arrows-v' style='font-size:48px;color:gray; vertical-align: middle;'></i>
+    </div>
+
+    <div class="col-sm-6">
+        <section class=" col col-sm-12  scrolling documentTypeList">
+            <div class="form-horizontal" *ngFor="let draggable of documentTypeList">
+                <div class="form-group" *ngIf="draggable.show" >
+                    <label *ngIf="draggable.type != undefined" class="control-label col-sm-3" style="text-align: left; margin-top: 10px;;">
+                            {{draggable.type}} : 
+                    </label>
+                    <div class="col col-sm-{{draggable.type == undefined?12:9}} ">
+                        <ol class=""
+                            dndDropzone class="dd-empty dndDragover"
+                            dndEffectAllowed="copyMove"
+                            [dndDisableIf]="draggable.content != ''"
+                            (dndDrop)="onRightDrop($event,draggable)">
                             <li [dndEffectAllowed]="draggable.effectAllowed"
                                 [dndDraggable]="draggable.data"
                                 (dndStart)="onDraggableStart(draggable)"
-                                (dndMoved)="onLeftDraggableCopied(draggable)"
-                                class="dd-item" *ngIf="draggable.show">
-
+                                (dndMoved)="onRightDraggableCopied(draggable)"
+                                class="dd-item {{draggable.class}}" *ngIf="draggable.content != ''">
                                 <div class="dd-handle">{{draggable.content}}</div>
                             </li>
-                        </span>
-                        <li class="dd-placeholder" style="height: 36px;"
-                            dndPlaceholderRef>
-                        </li>
-                    </ol>
-
-                </div>
-            </label>
-        </section>
-        
-      </div>
-    
-    <div class="col-sm-1 " style="text-align: center; margin-top: 120px;">
-        <i class='fas fa-arrows-alt-h' style='font-size:48px;color:gray; vertical-align: middle;'></i>
-    </div>
-      <div class="col-sm-6">
-        <section class="select col col-12 document-type scrolling">
-            <label class="textarea">
-
-                <div class="dd" *ngFor="let draggable of documentTypeList">
-                    <!-- (dndDragover)="onDragover($event, draggable)" -->
-
-                    <div class="form-inline" *ngIf="draggable.show" >
-                        <label *ngIf="draggable.type != undefined" style="margin-bottom: 22px;" class="col col-4 control-label  no-left-padding padding-top-10">
-                                {{draggable.type}} : 
-                        </label>
-                        <div class="col col-{{draggable.type == undefined?12:8}} nopadding">
-                            <ol class="dd-list dd-empty white"
-                                dndDropzone class="dd-empty dd-list dndDragover "
-                                dndEffectAllowed="copyMove"
-                                [dndDisableIf]="draggable.content != ''"
-                                (dndDrop)="onRightDrop($event,draggable)">
-                                <li [dndEffectAllowed]="draggable.effectAllowed"
-                                    [dndDraggable]="draggable.data"
-                                    (dndStart)="onDraggableStart(draggable)"
-                                    (dndMoved)="onRightDraggableCopied(draggable)"
-                                    class="dd-item {{draggable.class}}" *ngIf="draggable.content != ''">
-                                    <div class="dd-handle">{{draggable.content}}</div>
-                                </li>
-                                <li class="dd-placeholder"
-                                    dndPlaceholderRef></li>
-                            </ol>
-                        </div>
+                            <li class="dd-placeholder"
+                                dndPlaceholderRef></li>
+                        </ol>
                     </div>
                 </div>
-            </label>
+            </div>
         </section>
-        
-      </div>
     </div>
+</div>
 
 
