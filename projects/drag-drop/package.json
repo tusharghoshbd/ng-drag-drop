@@ -1,6 +1,6 @@
 {
   "name": "tushar-ng-drag-drop",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple drag and drop for angular",
   "main": "dist/drag-drop",
   "author": "tusharghoshbd",

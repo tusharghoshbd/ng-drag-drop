@@ -9,6 +9,7 @@ A simple drag and drop library that help to move data from draggable to droppabl
 
 ## Installation
 ```angular
+npm i ngx-drag-drop
 npm i tushar-ng-drag-drop
 ```
 
@@ -24,13 +25,13 @@ imports: [
 ```
 #### Html file
 ```angular
-<tushar-ng-drag-drop 
+<ng-drag-drop 
    [documentList]="documentList"
    [documentTypeList]="documentTypeList"
    (onDraggable) ="onDraggableData($event)"
    (onLeftDraggableDrop)="onLeftDraggableDrop($event)"
    (onRightDraggableDrop)="onRightDraggableDrop($event)"
-></tushar-ng-drag-drop>
+></ng-drag-drop>
 ```
 
 #### Ts file
